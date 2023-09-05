@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="/js/main.js" defer></script>
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body>
     <div id="app">
-      <button id="toggle-mode">Ativar/desativar light mode</button>
+      <button id="toggle-mode">
+        <i class="ph-bold ph-sun"></i>
+        <i class="ph-bold ph-moon"></i>
+      </button>
 
       <section id="timer">
         <span id="minutes">25</span>
@@ -19,12 +23,12 @@
       </section>
 
       <section id="controls">
-        <button>play</button>
-        <button>pause</button>
-        <button>set</button>
-        <button>stop</button>
-        <button>musicon</button>
-        <button>musicoff</button>
+        <button><i class="ph ph-play-circle"></i></button>
+        <button><i class="ph ph-pause-circle"></i></button>
+        <button><i class="ph ph-timer"></i></button>
+        <button><i class="ph ph-stop-circle"></i></button>
+        <button><i class="ph ph-speaker-none"></i></button>
+        <button><i class="ph ph-speaker-high"></i></button>
       </section>
     </div>
   </body>
