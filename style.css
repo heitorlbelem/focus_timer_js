@@ -8,7 +8,7 @@
 }
 
 :root {
-  font-size: 62.5%;
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
 
   --hue: 194;
   --bg-color: hsl(var(--hue), 5%, 7%);
@@ -28,9 +28,41 @@ body {
 
 #app {
   display: grid;
-  justify-content: center;
+  place-content: center;
+  align-items: center;
 }
 
 .flex {
   display: flex;
+}
+
+#timer {
+  font-size: 9.6rem;
+  font-weight: bold;
+  font-family: sans-serif;
+
+  justify-content: center;
+}
+
+#controls {
+  background-color: var(--controls-bg-color);
+
+  margin-top: 1.6rem;
+  padding: 2.2rem 4rem;
+  border-radius: 999px;
+
+  gap: 1.6rem;
+}
+
+button {
+  background-color: transparent;
+  color: var(--primary-color);
+  cursor: pointer;
+
+  border: 0;
+  font-size: 4rem;
+}
+
+.secondary {
+  color: var(--text-color);
 }
