@@ -3,4 +3,5 @@ export const state = {
   seconds: 0,
   isRunning: false,
   isMuted: true,
+  countdownId: null,
 }
